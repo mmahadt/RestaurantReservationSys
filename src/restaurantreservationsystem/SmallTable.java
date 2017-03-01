@@ -47,8 +47,8 @@ public class SmallTable implements Table {
     }
 
     @Override
-    public static boolean getATableBooked() {
-        
+    public boolean getATableBooked() {
+
         if (!this.isFull()) {
             Customer C1 = new Customer();
 

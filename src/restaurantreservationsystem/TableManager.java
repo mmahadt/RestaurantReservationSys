@@ -27,24 +27,25 @@ public class TableManager {
         if (persons <= 2) {
             //book a small table for them
             tbl = new SmallTable();
+            
             if (tbl.getATableBooked()) {
                 System.out.println("Congratulations your table has been booked.");
             }
         } else if (persons > 2 && persons <= 4) {
             //book a medium table for them
-            tbl = new SmallTable();
+            tbl = new MediumTable();
             if (tbl.getATableBooked()) {
                 System.out.println("Congratulations your table has been booked.");
             }
         } else if (persons > 4 && persons <= 6) {
             //book a large table for them
-            tbl = new SmallTable();
+            tbl = new LargeTable();
             if (tbl.getATableBooked()) {
                 System.out.println("Congratulations your table has been booked.");
             }
         } else if (persons > 6 && persons <= 12) {
             //book a extra large table for them
-            tbl = new SmallTable();
+             tbl = new LargeTable();//Extralarge table
             if (tbl.getATableBooked()) {
                 System.out.println("Congratulations your table has been booked.");
             }
