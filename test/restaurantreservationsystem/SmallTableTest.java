@@ -71,7 +71,7 @@ public class SmallTableTest {
 
         assertTrue(instance.getATableBooked());
 
-        for (int i = 0; i < 2; ++i) {
+        for (int i = 0; i < 30; ++i) {
             instance.getATableBooked();
         }
 

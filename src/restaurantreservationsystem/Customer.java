@@ -13,6 +13,16 @@ public class Customer {
 
     private static int customerCount = 0;
 
+    private int customerID;
+
+    public int getCustomerID() {
+        return customerID;
+    }
+
+    public void setCustomerID(int customerID) {
+        this.customerID = customerID;
+    }
+
     private String timeSlot;
 
     private int tableNumber;
@@ -21,6 +31,7 @@ public class Customer {
 
     public Customer() {
         ++customerCount;
+        customerID = customerCount;
     }
 
     public void setBookingDetails(String timeSlot, int tblNo, String tblType) {
@@ -30,17 +41,9 @@ public class Customer {
     }
 
     public void getDetails() {
-        System.out.print("Customer number "+getCustomerCount());
-        System.out.print("Booked Table "+tableType);
-        System.out.print("Table Number "+tableNumber);
-    }
-
-    public static int getCustomerCount() {
-        return customerCount;
-    }
-
-    public static void setCustomerCount(int customerCount) {
-        Customer.customerCount = customerCount;
+        System.out.print("Customer number " + getCustomerID());
+        System.out.print("Booked Table " + tableType);
+        System.out.print("Table Number " + tableNumber);
     }
 
 }

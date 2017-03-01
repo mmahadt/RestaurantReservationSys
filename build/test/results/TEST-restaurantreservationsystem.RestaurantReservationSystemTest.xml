@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="DESKTOP-DP3OEBA" name="restaurantreservationsystem.RestaurantReservationSystemTest" skipped="0" tests="1" time="0.453" timestamp="2017-03-01T04:58:24">
+<testsuite errors="0" failures="1" hostname="DESKTOP-DP3OEBA" name="restaurantreservationsystem.RestaurantReservationSystemTest" skipped="0" tests="1" time="0.922" timestamp="2017-03-01T12:43:24">
   <properties>
     <property name="ant.file.RestaurantReservationSystem-impl" value="C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\nbproject\build-impl.xml" />
     <property name="netbeans.autoupdate.country" value="US" />
@@ -40,7 +40,7 @@
     <property name="user.name" value="Mahad" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner restaurantreservationsystem.RestaurantReservationSystemTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\test\results\TEST-restaurantreservationsystem.RestaurantReservationSystemTest.xml crashfile=C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\junitvmwatcher1055695847641072953.properties propsfile=C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\junit969056038199245058.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner restaurantreservationsystem.RestaurantReservationSystemTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\test\results\TEST-restaurantreservationsystem.RestaurantReservationSystemTest.xml crashfile=C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\junitvmwatcher4442471104196090351.properties propsfile=C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\junit4582887256023340588.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -302,7 +302,7 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="restaurantreservationsystem.RestaurantReservationSystemTest" name="testMain" time="0.015">
+  <testcase classname="restaurantreservationsystem.RestaurantReservationSystemTest" name="testMain" time="0.016">
     <failure message="The test case is a prototype." type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: The test case is a prototype.
 	at restaurantreservationsystem.RestaurantReservationSystemTest.testMain(RestaurantReservationSystemTest.java:49)
 </failure>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="DESKTOP-DP3OEBA" name="restaurantreservationsystem.SmallTableTest" skipped="0" tests="3" time="0.469" timestamp="2017-03-01T04:58:25">
+<testsuite errors="0" failures="0" hostname="DESKTOP-DP3OEBA" name="restaurantreservationsystem.SmallTableTest" skipped="0" tests="2" time="0.594" timestamp="2017-03-01T12:43:26">
   <properties>
     <property name="ant.file.RestaurantReservationSystem-impl" value="C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\nbproject\build-impl.xml" />
     <property name="netbeans.autoupdate.country" value="US" />
@@ -40,7 +40,7 @@
     <property name="user.name" value="Mahad" />
     <property name="copylibs.rebase" value="true" />
     <property name="libs.swing-layout.maven-pom" value="" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner restaurantreservationsystem.SmallTableTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\test\results\TEST-restaurantreservationsystem.SmallTableTest.xml crashfile=C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\junitvmwatcher6143400925561641661.properties propsfile=C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\junit295891255414893149.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner restaurantreservationsystem.SmallTableTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\test\results\TEST-restaurantreservationsystem.SmallTableTest.xml crashfile=C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\junitvmwatcher437839815032644260.properties propsfile=C:\Users\Mahad\Documents\NetBeansProjects\RestaurantReservationSystem\build\junit2945876502956146548.properties" />
     <property name="build.classes.dir" value="build/classes" />
     <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
     <property name="build.sysclasspath" value="ignore" />
@@ -303,43 +303,9 @@
     <property name="platform.active" value="default_platform" />
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
   </properties>
-  <testcase classname="restaurantreservationsystem.SmallTableTest" name="testGetAvailableSlots" time="0.0" />
-  <testcase classname="restaurantreservationsystem.SmallTableTest" name="testGetATableBooked" time="0.016" />
+  <testcase classname="restaurantreservationsystem.SmallTableTest" name="testGetATableBooked" time="0.0" />
   <testcase classname="restaurantreservationsystem.SmallTableTest" name="testIsFull" time="0.0" />
-  <system-out><![CDATA[getAvailableSlots
-Small Table number: 0
-6:30 pm to 8:00 pm
-
-
-Small Table number: 0
-8:00 pm to 9:30 pm
-
-
-Small Table number: 1
-6:30 pm to 8:00 pm
-
-
-Small Table number: 1
-8:00 pm to 9:30 pm
-
-
-Small Table number: 2
-6:30 pm to 8:00 pm
-
-
-Small Table number: 2
-8:00 pm to 9:30 pm
-
-
-Small Table number: 3
-6:30 pm to 8:00 pm
-
-
-Small Table number: 3
-8:00 pm to 9:30 pm
-
-
-getATableBooked
+  <system-out><![CDATA[getATableBooked
 isFull
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
