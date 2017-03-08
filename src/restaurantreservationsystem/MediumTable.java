@@ -44,10 +44,12 @@ public class MediumTable implements Table {
                     STSlotsAvailable[i] = false;//book the slot
                     C1.setBookingDetails(timeSlots[i], i, "Small Table");
                     C1.getDetails();
+                    System.out.println("Congratulations your table has been booked.");
                     return true;
                 }
             }
         }
+        System.out.println("We are sorry. All medium tables have been booked for today.");
         return false;
     }
 }

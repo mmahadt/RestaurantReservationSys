@@ -24,6 +24,12 @@ public class SmallTable implements Table {
                 "8:00 pm to 9:30 pm"
             };
 
+    public static int smallTableCount = 0;
+
+    public SmallTable() {
+        ++smallTableCount;
+    }
+
     public boolean isFull() {
         for (int i = 0; i < STSlotsAvailable.length; i++) {
             if (STSlotsAvailable[i] == true) {
@@ -44,10 +50,12 @@ public class SmallTable implements Table {
                     STSlotsAvailable[i] = false;//book the slot
                     C1.setBookingDetails(timeSlots[i], i, "Small Table");
                     C1.getDetails();
+                    System.out.println("Congratulations your table has been booked.");
                     return true;
                 }
             }
         }
+        System.out.println("We are sorry. All small tables have been booked for today.");
         return false;
-    }  
+    }
 }

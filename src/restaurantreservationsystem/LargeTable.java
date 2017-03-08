@@ -9,7 +9,7 @@ package restaurantreservationsystem;
  *
  * @author Mahad
  */
-public class LargeTable implements Table{
+public class LargeTable implements Table {
 
     boolean[] STSlotsAvailable = {true, true, true, true, true, true, true};
 
@@ -44,12 +44,14 @@ public class LargeTable implements Table{
                     STSlotsAvailable[i] = false;//book the slot
                     C1.setBookingDetails(timeSlots[i], i, "Small Table");
                     C1.getDetails();
+                    
                     return true;
                 }
             }
         }
+        System.out.println("We are sorry. All large tables have been booked for today.");
         return false;
-    }  
+    }
 }
 
 

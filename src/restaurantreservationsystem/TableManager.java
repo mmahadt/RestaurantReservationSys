@@ -15,6 +15,14 @@ public class TableManager {
 
     private Scanner scan = new Scanner(System.in);
 
+    private SmallTable[] smallTables = new SmallTable[4];
+
+    private MediumTable[] mediumTables = new MediumTable[8];
+
+    private LargeTable[] largeTables = new LargeTable[3];
+
+    private ExtraLargeTable[] extraLargeTables = new ExtraLargeTable[1];
+
     public void getInputFromUser() {
         System.out.println("Welcome to Restaurant Reservation System");
 
@@ -25,12 +33,14 @@ public class TableManager {
 
         Table tbl;
         if (persons <= 2) {
-            //book a small table for them
-            tbl = new SmallTable();
-            
-            if (tbl.getATableBooked()) {
-                System.out.println("Congratulations your table has been booked.");
+
+            for (int i = 0; i < smallTables.length; ++i) {
+                if(!smallTables[i].isFull()){
+                    smallTables[i].getATableBooked();
+                }
             }
+//book a small table for them if available
+
         } else if (persons > 2 && persons <= 4) {
             //book a medium table for them
             tbl = new MediumTable();
@@ -45,7 +55,7 @@ public class TableManager {
             }
         } else if (persons > 6 && persons <= 12) {
             //book a extra large table for them
-             tbl = new LargeTable();//Extralarge table
+            tbl = new LargeTable();//Extralarge table
             if (tbl.getATableBooked()) {
                 System.out.println("Congratulations your table has been booked.");
             }
