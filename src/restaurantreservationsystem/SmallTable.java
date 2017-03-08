@@ -11,8 +11,6 @@ package restaurantreservationsystem;
  */
 public class SmallTable implements Table {
 
-    boolean ST[] = new boolean[4];//an array to store total number of tables 
-
     boolean[] STSlotsAvailable = {true, true, true, true, true, true, true};
 
     String timeSlots[]
@@ -26,17 +24,6 @@ public class SmallTable implements Table {
                 "8:00 pm to 9:30 pm"
             };
 
-//    public boolean isFull1() {
-//        for (int i = 0; i < ST.length; i++) {
-//            for (int j = 0; j < STSlotsAvailable.length; j++) {
-//                if (STSlotsAvailable[j] == true) {
-//                    return false;
-//                }
-//            }
-//        }
-//        return true;
-//    }
-
     public boolean isFull() {
         for (int i = 0; i < STSlotsAvailable.length; i++) {
             if (STSlotsAvailable[i] == true) {
@@ -45,25 +32,6 @@ public class SmallTable implements Table {
         }
         return false;
     }
-
-    // @Override
-//    public boolean getATableBooked1() {
-//
-//        if (!this.isFull()) {
-//            Customer C1 = new Customer();
-//
-//            for (int i = 0; i < ST.length; i++) {
-//                for (int j = 0; j < timeSlots.length; j++) {
-//                    if (STSlotsAvailable[j] == true) {
-//                        STSlotsAvailable[j] = false;
-//                        C1.setBookingDetails(timeSlots[j], i, "Small Table");
-//                        return true;
-//                    }
-//                }
-//            }
-//        }
-//        return false;
-//    }
 
     @Override
     public boolean getATableBooked() {
