@@ -15,7 +15,8 @@ public class RestaurantReservationSystem {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+        TableManager Tbl=new TableManager();
+        Tbl.getInputFromUser();
     }
     
 }

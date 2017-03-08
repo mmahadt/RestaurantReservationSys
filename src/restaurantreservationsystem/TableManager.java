@@ -43,29 +43,26 @@ public class TableManager {
 
         } else if (persons > 2 && persons <= 4) {
             //book a medium table for them
-            tbl = new MediumTable();
-            if (tbl.getATableBooked()) {
-                System.out.println("Congratulations your table has been booked.");
+            for (int i = 0; i < mediumTables.length; ++i) {
+                if(!mediumTables[i].isFull()){
+                    mediumTables[i].getATableBooked();
+                }
             }
         } else if (persons > 4 && persons <= 6) {
             //book a large table for them
-            tbl = new LargeTable();
-            if (tbl.getATableBooked()) {
-                System.out.println("Congratulations your table has been booked.");
+            for (int i = 0; i < largeTables.length; ++i) {
+                if(!largeTables[i].isFull()){
+                    largeTables[i].getATableBooked();
+                }
             }
         } else if (persons > 6 && persons <= 12) {
             //book a extra large table for them
-            tbl = new LargeTable();//Extralarge table
-            if (tbl.getATableBooked()) {
-                System.out.println("Congratulations your table has been booked.");
+            for (int i = 0; i < extraLargeTables.length; ++i) {
+                if(!extraLargeTables[i].isFull()){
+                    extraLargeTables[i].getATableBooked();
+                }
             }
         }
-
-        System.out.println("Welcome to Restaurant Reservation System");
-
-        System.out.println("Welcome to Restaurant Reservation System");
-
-        System.out.println("Welcome to Restaurant Reservation System");
 
     }
 }
