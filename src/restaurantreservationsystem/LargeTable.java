@@ -44,7 +44,7 @@ public class LargeTable implements Table {
                     STSlotsAvailable[i] = false;//book the slot
                     C1.setBookingDetails(timeSlots[i], i, "Small Table");
                     C1.getDetails();
-                    
+                    System.out.println("Congratulations your table has been booked.");
                     return true;
                 }
             }
@@ -75,4 +75,4 @@ public class LargeTable implements Table {
         }
         return false;
     } 
-*/
+ */
